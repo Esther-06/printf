@@ -23,6 +23,7 @@ int print_number(va_list args)
 	}
 	else
 		num = n;
+
 	for (; num / div > 9; )
 		div *= 10;
 
