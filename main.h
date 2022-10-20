@@ -1,9 +1,9 @@
-#ifndef PRINT_F
-#define PRINT_F
+#ifndef MAIN_H
+#define MAIN_H
 
+#include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdarg.h>
 
 /**
  * struct convert - defines a structure for symbols and functions
@@ -42,4 +42,4 @@ void write_base(char *str);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int print_unsgined_number(unsigned int);
 
-#endif
+#endif /* MAIN_H */
