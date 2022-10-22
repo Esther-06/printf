@@ -65,6 +65,10 @@ int print_hexa(va_list types, char map_to[], char buffer[], int flags,
 int print_non_printable(va_list types, char buffer[],
 		int flags, int width, int precision, int size);
 
+/* Funcion to print memory address */
+int print_pointer(va_list types, char buffer[],
+		int flags, int width, int precision, int size);
+
 /* Funciotns to handle other specifiers */
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
@@ -103,5 +107,8 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
+/* func to print */
+int _putchar(char);
+int _puts(char *);
 
 #endif /* MAIN_H */

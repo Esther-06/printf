@@ -20,7 +20,7 @@ int handle_write_char(char c, char buffer[], int flags,
 	UNUSED(precision);
 	UNUSED(size);
 
-	if (flags & F_Zero)
+	if (flags & F_ZERO)
 		padd = '0';
 
 	buffer[i++] = c;
@@ -153,7 +153,7 @@ int write_unsgnd(int is_negative, int ind, char buffer[], int flags,
 		int width, int precision, int size)
 {
 	/* the number is stored at the buffer's right and starts at position i */
-	int length = BUFF_SIZE - ind - 1, 1 = 0;
+	int length = BUFF_SIZE - ind - 1, i = 0;
 	char padd = ' ';
 
 	UNUSED(is_negative);

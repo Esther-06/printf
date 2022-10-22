@@ -85,7 +85,7 @@ int print_octal(va_list types, char buffer[], int flags,
  * Return: Number of chars printed
  */
 int print_hexadecimal(va_list types, char buffer[], int flags,
-		int width, int precision, size)
+		int width, int precision, int size)
 {
 	return (print_hexa(types, "0123456789abcdef", buffer,
 		flags, 'x', width, precision, size));
@@ -142,7 +142,7 @@ int print_hexa(va_list types, char map_to[], char buffer[], int flags,
 		num /= 16;
 	}
 
-	if (flags & HASH && init_num != 0)
+	if (flags & F_HASH && init_num != 0)
 	{
 		buffer[i--] = flag_ch;
 		buffer[i--] = '0';
