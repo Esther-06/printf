@@ -10,7 +10,6 @@
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-
 int print_hex(va_list l, flags_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -33,7 +32,6 @@ int print_hex(va_list l, flags_t *f)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-
 int print_hex_big(va_list l, flags_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -55,7 +53,6 @@ int print_hex_big(va_list l, flags_t *f)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-
 int print_binary(va_list l, flags_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -74,7 +71,6 @@ int print_binary(va_list l, flags_t *f)
  * number into the correct base and returns it as a string
  * Return: the number of char printed
  */
-
 int print_octal(va_list l, flags_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
